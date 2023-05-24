@@ -1,4 +1,45 @@
+
+/* CSS HEX */
+/* --lavender-blush: #f7ebecff;
+--thistle: #ddbdd5ff;
+--rose-quartz: #ac9fbbff;
+--paynes-gray: #59656fff;
+--raisin-black: #1d1e2cff; */
+
+
+/* CSS HEX */
+/* --prussian-blue: #1c3144ff;
+--feldgrau: #596f62ff;
+--asparagus: #7ea16bff;
+--tea-green: #c3d898ff;
+--burgundy: #70161eff; */
+/* --pale-dogwood: #ebd4cbff;
+--isabelline: #f4f3eeff; */
+
+
+/* CSS HEX */
+/* --night: #131515ff;
+--paynes-gray: #5d737eff;
+--linen: #f9eae1ff;
+--auburn: #9e2b25ff;
+--snow: #fffafbff; */
+/* --asparagus: #7fb069ff; */
+
+/* general */
 body{
-    background-image: url(../images/graph_paper.JPG);
-    background-size: 20px;
+    background: #1c3144ff;
+    color: #1c3144ff;
+}
+
+#page{
+    background-image: url(../images/graph_paper_1.jpg);
+    background-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: #9e2b25ff;
+}
+a:visited{
+    color: #70161eff;
 }
