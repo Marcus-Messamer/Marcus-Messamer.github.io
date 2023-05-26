@@ -1,40 +1,58 @@
-
-/* CSS HEX */
-/* --lavender-blush: #f7ebecff;
---thistle: #ddbdd5ff;
---rose-quartz: #ac9fbbff;
---paynes-gray: #59656fff;
---raisin-black: #1d1e2cff; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Prompt:wght@400;700&display=swap');
 
 
-/* CSS HEX */
-/* --prussian-blue: #1c3144ff;
---feldgrau: #596f62ff;
---asparagus: #7ea16bff;
---tea-green: #c3d898ff;
---burgundy: #70161eff; */
-/* --pale-dogwood: #ebd4cbff;
---isabelline: #f4f3eeff; */
 
 
-/* CSS HEX */
-/* --night: #131515ff;
---paynes-gray: #5d737eff;
---linen: #f9eae1ff;
---auburn: #9e2b25ff;
---snow: #fffafbff; */
-/* --asparagus: #7fb069ff; */
+/* -----------------------------global------------------------------ */
 
-/* general */
+
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
 body{
-    background: #1c3144ff;
-    color: #1c3144ff;
+    background: rgb(180, 240, 210);
+    color: rgb(28, 35, 68);
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1;
 }
 
 #page{
-    background-image: url(../images/graph_paper_1.jpg);
     background-size: 16px;
 }
+
+h1, h2{
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 4rem;
+    color: #c3d898ff;
+}
+h2{
+    font-size: 1.4rem;
+}
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color:rgb(78, 139, 43)
+}
+h4{
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+}
+p, li{
+    font-size: .8rem;
+    font-style: normal;
+    margin: .3rem 0 .3rem 1rem;
+}
+
 
 a{
     text-decoration: none;
@@ -43,3 +61,100 @@ a{
 a:visited{
     color: #70161eff;
 }
+
+
+
+/* ------------------header footer-------------------------- */
+
+
+header, footer{
+    background: #1c3144ff;
+    color: rgb(116, 138, 71);
+}
+
+
+/* header */
+.hero{
+    padding: 50px;
+}
+
+.hero:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.profile-pic{
+    border-radius: 50%;
+}
+
+.socials{
+    float: right;
+}
+
+/* footer */
+
+footer{
+    font-size: .7rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.contact{
+    margin: 1rem;
+}
+footer p{
+    margin: 0 0 1rem;
+}
+
+
+
+
+
+/* -------------------- main -------------------------*/
+
+/* education */
+.education, .work{
+    margin: 1.5rem 
+}
+.edu-card{
+    margin-left: 1rem;
+}
+
+/* work */
+
+.work:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.job-card{
+    margin-left: 1rem;
+}
+
+.job-disc, .job-title{
+    display: inline-block;
+}
+
+.job-title p:nth-child(2){
+    font-style: italic;
+}
+
+/* --------------------general------------------------ */
+
+
+.profile-pic, .job-title{
+    width: 30%;    
+    float:left;
+}
+
+.about-me, .job-disc{
+    width: 70%;
+    float:left;
+    padding-left: 30px;
+}
+
+
+
+
