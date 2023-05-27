@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Prompt:wght@400;700&display=swap');
 
+:root{
+    --highlight: #fac846;    
+    --accent: #ff7d2d;
+    --mid: #a0c382;
+    --base: #5f9b8c;
+    --lowlight: #233c4b;
+    --newtral: #f5f3ea;
+    --burgundy: #70161eff;
+}
+
+
+
 
 
 
@@ -13,9 +25,9 @@ html{
     box-sizing: inherit;
 }
 
-body{
-    background: rgb(180, 240, 210);
-    color: rgb(28, 35, 68);
+body{ 
+    background: var(--newtral);
+    color: var(--burgundy);   
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     line-height: 1;
@@ -32,7 +44,7 @@ h1, h2{
 }
 h1{
     font-size: 4rem;
-    color: #c3d898ff;
+    color: var(--highlight);
 }
 h2{
     font-size: 1.4rem;
@@ -40,7 +52,8 @@ h2{
 h3{
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color:rgb(78, 139, 43)
+    margin-top: 0;
+    color:var(--lowlight)
 }
 h4{
     font-size: 1rem;
@@ -56,11 +69,20 @@ p, li{
 
 a{
     text-decoration: none;
-    color: #9e2b25ff;
+    color: var(--mid);
 }
 a:visited{
-    color: #70161eff;
+    color: var(--base);
 }
+a.btn{
+    display:inline-block;
+    margin: .5rem;
+}
+
+/* --------------------general------------------------ */
+
+
+
 
 
 
@@ -68,8 +90,12 @@ a:visited{
 
 
 header, footer{
-    background: #1c3144ff;
-    color: rgb(116, 138, 71);
+    background: var(--lowlight);
+    color: var(--accent);
+}
+.linkedin, .github, .email{
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 
@@ -78,19 +104,23 @@ header, footer{
     padding: 50px;
 }
 
-.hero:after{
-    content: '';
-    display: block;
-    clear: both;
+.title{
+    padding-left: 2.6rem;
 }
 
 .profile-pic{
     border-radius: 50%;
+    width: 18rem;
+    margin: 2rem;
+    float: left;
 }
 
-.socials{
+.socials {
     float: right;
 }
+
+
+
 
 /* footer */
 
@@ -114,14 +144,30 @@ footer p{
 /* -------------------- main -------------------------*/
 
 /* education */
+.education{
+  
+    display: inline-block;
+}
+.education::after{
+    content: '';
+    display: block;
+    clear: all
+}
+
 .education, .work{
-    margin: 1.5rem 
+    padding: 1.5rem 
 }
 .edu-card{
-    margin-left: 1rem;
+    background:#5f9b8c6e;
+    padding: 2rem;
+    border-radius: 3rem;
 }
 
 /* work */
+
+.work{
+    background: var(--accent);
+}
 
 .work:after{
     content: '';
@@ -130,7 +176,11 @@ footer p{
 }
 
 .job-card{
-    margin-left: 1rem;
+    margin: 1rem;
+    background: #f5f3ead2;
+    display: inline-block;
+    padding: 1.5rem;
+    border-radius: 1rem;
 }
 
 .job-disc, .job-title{
@@ -140,21 +190,15 @@ footer p{
 .job-title p:nth-child(2){
     font-style: italic;
 }
-
-/* --------------------general------------------------ */
-
-
-.profile-pic, .job-title{
-    width: 30%;    
-    float:left;
+.job-title{
+    width: 20rem;
+    margin: 1rem 0;
 }
 
-.about-me, .job-disc{
-    width: 70%;
-    float:left;
+.job-disc{
+    text-align: left;
     padding-left: 30px;
+    display: block;
 }
-
-
 
 

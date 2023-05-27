@@ -1,0 +1,105 @@
+{
+    "jobs": [
+        {
+            "title": "Embedded Software Engineer",
+            "company": "Vermeer Corporation",
+            "location": {
+                "city":"Pella",
+                "state": "IA"
+            },
+            "deration": {
+                "start":{
+                    "month": 6,
+                    "year": 2022
+                },
+                "end":{
+                    "month": 0,
+                    "year": 0
+                }                
+            },
+            "summary":[
+                {"res": "Created .... "},
+                {"res": "Lead .... "},
+                {"res": "Responsible for .... "}
+            ]
+            
+        },
+
+        {
+            "title": "Design Engineer",
+            "company": "Vermeer Corporation",
+            "location": {
+                "city":"Pella",
+                "state": "IA"
+            },
+            "deration": {
+                "start":{
+                    "month": 3,
+                    "year": 2021
+                },
+                "end":{
+                    "month": 6,
+                    "year": 2022
+                }                
+            },
+            "summary":[
+                {"res": "Created .... "},
+                {"res": "Lead .... "},
+                {"res": "Responsible for .... "}
+            ]
+            
+        },
+
+        {
+            "title": "Design Engineer",
+            "company": "Midco International",
+            "location": {
+                "city":"Chicago",
+                "state": "IL"
+            },
+            "deration": {
+                "start":{
+                    "month": 1,
+                    "year": 2019
+                },
+                "end":{
+                    "month": 3,
+                    "year": 2022
+                }                
+            },
+            "summary":[
+                {"res": "Created .... "},
+                {"res": "Lead .... "},
+                {"res": "Responsible for .... "}
+            ]
+            
+        },
+
+        {
+            "title": "Job Title",
+            "company": "Company",
+            "location": {
+                "city":"Chicago",
+                "state": "IL"
+            },
+            "deration": {
+                "start":{
+                    "month": 1,
+                    "year": 2019
+                },
+                "end":{
+                    "month": 3,
+                    "year": 2022
+                }                
+            },
+            "summary":[
+                {"res": "Created .... "},
+                {"res": "Lead .... "},
+                {"res": "Responsible for .... "}
+            ]
+            
+        }
+    ]
+
+
+}
