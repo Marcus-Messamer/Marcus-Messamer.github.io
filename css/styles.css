@@ -96,6 +96,7 @@ header, footer{
 .linkedin, .github, .email{
     width: 1.5rem;
     height: 1.5rem;
+    filter: invert(75%);
 }
 
 
@@ -111,7 +112,7 @@ header, footer{
 .profile-pic{
     border-radius: 50%;
     width: 18rem;
-    margin: 2rem;
+    margin: 3.75rem 2rem;
     float: left;
 }
 
@@ -144,8 +145,7 @@ footer p{
 /* -------------------- main -------------------------*/
 
 /* education */
-.education{
-  
+.education{      
     display: inline-block;
 }
 .education::after{
@@ -161,6 +161,7 @@ footer p{
     background:#5f9b8c6e;
     padding: 2rem;
     border-radius: 3rem;
+    margin: 2rem;
 }
 
 /* work */
