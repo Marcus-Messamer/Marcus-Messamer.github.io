@@ -6,7 +6,7 @@
     --mid: #a0c382;
     --base: #5f9b8c;
     --lowlight: #233c4b;
-    --newtral: #f5f3ea;
+    --neutral: #f5f3ea;
     --burgundy: #70161eff;
 }
 
@@ -26,7 +26,7 @@ html{
 }
 
 body{ 
-    background: var(--newtral);
+    background: var(--neutral);
     color: var(--burgundy);   
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -53,7 +53,8 @@ h3{
     font-size: 1.5rem;
     margin-bottom: 1rem;
     margin-top: 0;
-    color:var(--lowlight)
+    color:var(--lowlight);
+    
 }
 h4{
     font-size: 1rem;
@@ -71,18 +72,10 @@ a{
     text-decoration: none;
     color: var(--mid);
 }
-a:visited{
-    color: var(--base);
-}
+
 a.btn{
     display:inline-block;
-    margin: .5rem;
 }
-
-/* --------------------general------------------------ */
-
-
-
 
 
 
@@ -93,12 +86,34 @@ header, footer{
     background: var(--lowlight);
     color: var(--accent);
 }
-.linkedin, .github, .email{
+a img{
     width: 1.5rem;
     height: 1.5rem;
-    filter: invert(75%);
+    filter: invert(70%);
 }
 
+.contact a{
+    border-left: .5px solid var(--highlight);
+    border-right: .5px solid var(--highlight);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0;
+}
+
+.contact a:first-of-type{
+    border-right: .5px solid var(--highlight);
+    border-left: none;
+    padding-right: 1rem;
+}
+.contact a:last-of-type{
+    border-left: .5px solid var(--highlight);
+    border-right: none;
+    padding-right: 1rem;
+}
+
+a:hover img{
+    filter: invert(100%);
+}
 
 /* header */
 .hero{
@@ -114,9 +129,12 @@ header, footer{
     width: 18rem;
     margin: 3.75rem 2rem;
     float: left;
+    background: var(--accent);
+    padding: .75rem;
+    border: .6rem solid var(--highlight);
 }
 
-.socials {
+header .contact {
     float: right;
 }
 
@@ -158,48 +176,72 @@ footer p{
     padding: 1.5rem 
 }
 .edu-card{
-    background:#5f9b8c6e;
+    color: var(--highlight);
+    background: var(--lowlight);
     padding: 2rem;
-    border-radius: 3rem;
+    border-radius: 2rem;
     margin: 2rem;
+    border: .25rem solid var(--accent)
 }
 
 /* work */
 
 .work{
-    background: var(--accent);
+    background: var(--base);
 }
 
-.work:after{
+.work::after{
     content: '';
     display: block;
     clear: both;
 }
 
 .job-card{
+    color: var(--lowlight);
     margin: 1rem;
-    background: #f5f3ead2;
+    background: var(--neutral);
     display: inline-block;
-    padding: 1.5rem;
+    padding: 3rem;
     border-radius: 1rem;
+    border: .35rem solid var(--highlight);
 }
 
 .job-disc, .job-title{
     display: inline-block;
 }
 
-.job-title p:nth-child(2){
+h4 + p{
     font-style: italic;
 }
 .job-title{
     width: 20rem;
-    margin: 1rem 0;
+    
 }
 
 .job-disc{
     text-align: left;
-    padding-left: 30px;
+    padding-left: 0rem;
+    padding-top: 1rem;
     display: block;
 }
 
 
+/* ------------------------nav------------------------- */
+
+nav {
+    font-size: 0;
+    background: var(--accent);    
+}
+
+
+nav a{
+    display: inline-block;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem;  
+    color: var(--highlight);
+}
+
+nav a:hover{
+    font-weight: 700;
+}
