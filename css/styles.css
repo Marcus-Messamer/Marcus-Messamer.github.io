@@ -3,20 +3,10 @@
 :root{
     --highlight: #fac846;    
     --accent: #ff7d2d;
-    --mid: #a0c382;
-    --base: #5f9b8c;
     --lowlight: #233c4b;
     --neutral: #f5f3ea;
     --burgundy: #70161eff;
 }
-
-
-
-
-/* *{
-    border: 2px solid black;
-} */
-
 
 
 /* -----------------------------global------------------------------ */
@@ -29,6 +19,7 @@ html{
     box-sizing: inherit;
 }
 
+
 body{ 
     background: var(--neutral);
     color: var(--burgundy);   
@@ -36,11 +27,9 @@ body{
     font-family: 'Open Sans', sans-serif;
     line-height: 1;
 }
-
 #page{
     background-size: 16px;
 }
-
 h1, h2{
     font-family: 'Prompt', sans-serif;
     margin: 0;
@@ -58,7 +47,6 @@ h3{
     margin-bottom: 1rem;
     margin-top: 0;
     color:var(--lowlight);
-    
 }
 h4{
     font-size: 1rem;
@@ -70,17 +58,13 @@ p, li{
     font-style: normal;
     margin: .3rem 0 .3rem 1rem;
 }
-
-
 a{
     text-decoration: none;
-    color: var(--mid);
+    background-size:contain;
 }
-
 a.btn{
     display:inline-block;
 }
-
 
 
 /* ------------------header footer-------------------------- */
@@ -89,18 +73,65 @@ a.btn{
 header, footer{
     background: var(--lowlight);
 }
+
+/* -----------------------------------------------header */
+
 header{
     color: var(--accent);
-
+    margin-top: 3.5rem;
+    position: relative;
 }
+#about{
+    padding: 50px;
+}
+.title{
+    padding-left: 2.6rem;
+}
+
+
+/* ----------------------------------------------download */
+
+.download-cont {
+    position: absolute;
+    bottom: .5rem;
+    right: 1.5rem;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+.btn.download{
+    padding: 1rem;
+}
+header .download{    
+    background-image: url("../images/socials-logs/download-icon-burgundy.svg");
+}
+header .download:hover{
+    background-image: url("../images/socials-logs/download-icon-cream.svg"); 
+}
+
+/* footer */
+
 footer{
     color: var(--accent);
+    font-size: .7rem;
+    text-align: center;
+    padding: 1rem;
 }
-a img{
-    width: 1.5rem;
-    height: 1.5rem;
-    filter: invert(70%);
+.contact{
+    margin: 1rem;
+    font-size: 0;
 }
+footer p{
+    margin: 0 0 1rem;
+}
+footer a{    
+    display: inline-block;
+    font-size: 0;
+    text-align: center;
+    background-repeat: no-repeat;    
+    padding: 1rem;    
+    background-size:contain;
+}
+
 
 footer .btn-cont{
     font-size: 0;
@@ -122,18 +153,31 @@ footer .btn-cont:last-of-type{
     padding-right: 1rem;
 }
 
-/* header */
-header{
-    margin-top: 20px;
+
+footer .btn[title= "github"]{    
+    background-image: url("../images/socials-logs/github-mark-yellow.svg");
+}
+footer .btn[title= "github"]:hover{
+    background-image: url("../images/socials-logs/github-mark-cream.svg"); 
 }
 
-#about{
-    padding: 50px;
+
+footer .btn[title= "linkedin"]{    
+    background-image: url("../images/socials-logs/LinkedIn_icon-yellow.svg");
+}
+footer .btn[title= "linkedin"]:hover{
+    background-image: url("../images/socials-logs/LinkedIn_icon-cream.svg");
 }
 
-.title{
-    padding-left: 2.6rem;
+
+footer .btn[title= "email"]{    
+    background-image: url("../images/socials-logs/email-icon-yellow.svg");
 }
+footer .btn[title= "email"]:hover{
+    background-image: url("../images/socials-logs/email-icon-cream.svg");
+}
+
+/* -------------------- main -------------------------*/
 
 .profile-pic{
     border-radius: 50%;
@@ -144,28 +188,6 @@ header{
     padding: .75rem;
     border: .6rem solid var(--highlight);
 }
-
-/* footer */
-
-footer{
-    font-size: .7rem;
-    text-align: center;
-    padding: 1rem;
-}
-
-.contact{
-    margin: 1rem;
-    font-size: 0;
-}
-footer p{
-    margin: 0 0 1rem;
-}
-
-
-
-
-
-/* -------------------- main -------------------------*/
 
 /* education */
 #education{      
@@ -239,10 +261,13 @@ h4 + p{
 
 nav {
     overflow: hidden;
-    background: var(--accent);
+    background: var(--neutral);
     top: 0;
     text-transform: uppercase;
-    color: var(--burgundy)
+    position: fixed;
+    width: 100%;
+    border-bottom: .5rem solid var(--accent);
+    z-index: 1;
 }
 
 .nav-btns{
@@ -255,17 +280,16 @@ nav a{
     font-size: 1rem;
     text-align: center;
     background-repeat: no-repeat;    
-    padding: 1rem;    
-    background-size:contain;      
-    color: var(--lowlight);
+    padding: 1rem;      
+    color: var(--burgundy);
     font-weight: 700;
 }
 
 
 nav a:hover{
     font-weight: 700;
-    background-color: var(--neutral);
-    color: var(--burgundy)
+    background-color: var(--burgundy);
+    color: var(--neutral)
 }
 
 
@@ -274,72 +298,29 @@ nav a:hover{
     padding: 1rem;
 }
 
-
-
-
-
-
 nav .btn-cont:hover{
-    background-color: var(--neutral);
+    background-color: var(--burgundy);
 }
 
-nav .btn{
+.btn{
     padding: .7rem;
 }
 
 nav .btn[title= "github"]{    
-    background-image: url("../images/socials-logs/github-mark-navy.svg");
+    background-image: url("../images/socials-logs/github-mark-burgundy.svg");
 }
 nav .btn-cont:hover .btn[title= "github"]{
-    background-image: url("../images/socials-logs/github-mark-burgundy.svg");    
-    
-}
-
-nav .btn[title= "linkedin"]{    
-    background-image: url("../images/socials-logs/LinkedIn_icon-navy.svg");
-}
-nav .btn-cont:hover .btn[title= "linkedin"]{
-    background-image: url("../images/socials-logs/LinkedIn_icon-burgundy.svg");    
-    
-}
-
-
-
-/* ----------------------------------------------footer */
-
-
-footer a{    
-    display: inline-block;
-    font-size: 0;
-    text-align: center;
-    background-repeat: no-repeat;    
-    padding: 1rem;    
-    background-size:contain;
-}
-footer .btn{
-    padding: .7rem;}
-
-
-footer .btn[title= "github"]{    
-    background-image: url("../images/socials-logs/github-mark-yellow.svg");
-}
-footer .btn[title= "github"]:hover{
     background-image: url("../images/socials-logs/github-mark-cream.svg");    
     
 }
 
-footer .btn[title= "linkedin"]{    
-    background-image: url("../images/socials-logs/LinkedIn_icon-yellow.svg");
+nav .btn[title= "linkedin"]{    
+    background-image: url("../images/socials-logs/LinkedIn_icon-burgundy.svg");
 }
-footer .btn[title= "linkedin"]:hover{
+nav .btn-cont:hover .btn[title= "linkedin"]{
     background-image: url("../images/socials-logs/LinkedIn_icon-cream.svg");    
     
 }
 
-footer .btn[title= "email"]{    
-    background-image: url("../images/socials-logs/email-icon-yellow.svg");
-}
-footer .btn[title= "email"]:hover{
-    background-image: url("../images/socials-logs/email-icon-cream.svg");    
-    
-}
+
+
