@@ -92,21 +92,21 @@ a img{
     filter: invert(70%);
 }
 
-a{
-    border-left: .5px solid #fac846;
-    border-right: .5px solid #fac846;
+.contact a{
+    border-left: .5px solid var(--highlight);
+    border-right: .5px solid var(--highlight);
     padding-left: 1rem;
     padding-right: 1rem;
     margin: 0;
 }
 
-a:first-of-type{
-    border-right: .5px solid #fac846;
+.contact a:first-of-type{
+    border-right: .5px solid var(--highlight);
     border-left: none;
     padding-right: 1rem;
 }
-a:last-of-type{
-    border-left: .5px solid #fac846;
+.contact a:last-of-type{
+    border-left: .5px solid var(--highlight);
     border-right: none;
     padding-right: 1rem;
 }
@@ -129,9 +129,12 @@ a:hover img{
     width: 18rem;
     margin: 3.75rem 2rem;
     float: left;
+    background: var(--accent);
+    padding: .75rem;
+    border: .6rem solid var(--highlight);
 }
 
-.socials {
+header .contact {
     float: right;
 }
 
@@ -173,16 +176,18 @@ footer p{
     padding: 1.5rem 
 }
 .edu-card{
-    background:#5f9b8c6e;
+    color: var(--highlight);
+    background: var(--lowlight);
     padding: 2rem;
     border-radius: 2rem;
     margin: 2rem;
+    border: .25rem solid var(--accent)
 }
 
 /* work */
 
 .work{
-    background: var(--accent);
+    background: var(--base);
 }
 
 .work::after{
@@ -192,11 +197,13 @@ footer p{
 }
 
 .job-card{
+    color: var(--lowlight);
     margin: 1rem;
-    background: #f5f3ead2;
+    background: var(--neutral);
     display: inline-block;
     padding: 3rem;
     border-radius: 1rem;
+    border: .35rem solid var(--highlight);
 }
 
 .job-disc, .job-title{
@@ -219,3 +226,22 @@ h4 + p{
 }
 
 
+/* ------------------------nav------------------------- */
+
+nav {
+    font-size: 0;
+    background: var(--accent);    
+}
+
+
+nav a{
+    display: inline-block;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem;  
+    color: var(--highlight);
+}
+
+nav a:hover{
+    font-weight: 700;
+}
