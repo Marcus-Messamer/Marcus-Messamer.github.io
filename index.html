@@ -10,20 +10,31 @@
 </head>
 <body>
     <div id="page">
+
+        
+
+
         <header>
-            
-            <div class="hero">
-                <div class="about-me">
-                    <h1>Marcus Messamer</h1>
-                    <div class="title">
-                        <h2>Software Engineer</h2>               
-                        <p>*******elevator pitch*******</p>
-                    </div>
+            <nav>
+                <div class="nav-btns">
+                    <a href="#about">Home</a>
+                    <a href="#education">Education</a>
+                    <a href="#work">Work</a>
+                        <div class="btn-cont">
+                            <a class="btn" title="linkedin" href="https://www.linkedin.com/in/marcus-messamer-8171346a/"></a>
+                        </div>
+                        <div class="btn-cont">
+                            <a class="btn" title="github" href="https://github.com/Marcus-Messamer"></a>
+                        </div>
                 </div>
+            </nav>
             
-                <div class="contact">
-                    <a class="btn" title="linkedin" href="https://www.linkedin.com/in/marcus-messamer-8171346a/"><img class='linkedin'src="./images/socials-logs/LinkedIn_icon.svg" alt="linkedin">
-                    </a><a class="btn" title="github" href="https://github.com/Marcus-Messamer"><img class='github' src="./images/socials-logs/github-mark.svg" alt="github"></a>
+
+            <div id="about">
+                <h1>Marcus Messamer</h1>
+                <div class="title">
+                    <h2>Software Engineer</h2>               
+                    <p>*******elevator pitch*******</p>
                 </div>
             </div>
         </header>
@@ -32,7 +43,7 @@
         <main> 
             <img class="profile-pic"src="./images/profile-pic.jpg" alt="Marcus Messamer">
 
-            <section class="education">
+            <section id="education">
 
                 <h3>Education</h3>
                 <div class="edu-card">
@@ -47,7 +58,7 @@
                 </div>
             </section>
 
-            <section class="work">
+            <section id="work">
                 <h3>Work Experience</h3>
 
                 <div class="job-card">
@@ -158,27 +169,20 @@
                 </div>
             </section>
             
-        </main>
-
-
-        <nav>
-            <a>Home</a>
-            <a>Education</a>
-            <a>Work</a>
-            <a class="btn" title="linkedin" href="https://www.linkedin.com/in/marcus-messamer-8171346a/"><img class='linkedin'src="./images/socials-logs/LinkedIn_icon.svg" alt="linkedin"></a>
-            <a class="btn" title="github" href="https://github.com/Marcus-Messamer"><img class='github' src="./images/socials-logs/github-mark.svg" alt="github"></a>
-            
-
-        </nav>
-
-
+        </main>  
 
         <footer>
             
             <div class="contact">
-                <a class="btn" href="mailto:m.messamer@gmail.com"><img class='email' src="./images/socials-logs/email-icon.svg" alt="email">
-                </a><a class="btn" title="linkedin" href="https://www.linkedin.com/in/marcus-messamer-8171346a/"><img class='linkedin'src="./images/socials-logs/LinkedIn_icon.svg" alt="linkedin">
-                </a><a class="btn" title="github" href="https://github.com/Marcus-Messamer"><img class='github' src="./images/socials-logs/github-mark.svg" alt="github"></a>
+                <div class="btn-cont">
+                    <a class="btn" title="email" href="mailto:m.messamer@gmail.com"></a>
+                </div>
+                <div class="btn-cont">
+                    <a class="btn" title="linkedin" href="https://www.linkedin.com/in/marcus-messamer-8171346a/"></a>
+                </div>
+                <div class="btn-cont">
+                    <a class="btn" title="github" href="https://github.com/Marcus-Messamer"></a>
+                </div>
             </div>
     
             <p>Copyright &copy; <script>document.write((new Date).getFullYear())</script> Marcus Messamer</p>
