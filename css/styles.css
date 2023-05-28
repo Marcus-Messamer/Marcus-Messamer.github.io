@@ -13,6 +13,10 @@
 
 
 
+/* *{
+    border: 2px solid black;
+} */
+
 
 
 /* -----------------------------global------------------------------ */
@@ -84,6 +88,12 @@ a.btn{
 
 header, footer{
     background: var(--lowlight);
+}
+header{
+    color: var(--accent);
+
+}
+footer{
     color: var(--accent);
 }
 a img{
@@ -92,31 +102,32 @@ a img{
     filter: invert(70%);
 }
 
-.contact a{
-    border-left: .5px solid var(--highlight);
-    border-right: .5px solid var(--highlight);
+footer .btn-cont{
+    font-size: 0;
+    border-left: .5px solid var(--accent);
+    border-right: .5px solid var(--accent);
     padding-left: 1rem;
     padding-right: 1rem;
     margin: 0;
 }
 
-.contact a:first-of-type{
-    border-right: .5px solid var(--highlight);
+footer .btn-cont:first-of-type{
+    border-right: .5px solid var(--accent);
     border-left: none;
     padding-right: 1rem;
 }
-.contact a:last-of-type{
-    border-left: .5px solid var(--highlight);
+footer .btn-cont:last-of-type{
+    border-left: .5px solid var(--accent);
     border-right: none;
     padding-right: 1rem;
 }
 
-a:hover img{
-    filter: invert(100%);
+/* header */
+header{
+    margin-top: 20px;
 }
 
-/* header */
-.hero{
+#about{
     padding: 50px;
 }
 
@@ -134,13 +145,6 @@ a:hover img{
     border: .6rem solid var(--highlight);
 }
 
-header .contact {
-    float: right;
-}
-
-
-
-
 /* footer */
 
 footer{
@@ -151,6 +155,7 @@ footer{
 
 .contact{
     margin: 1rem;
+    font-size: 0;
 }
 footer p{
     margin: 0 0 1rem;
@@ -163,16 +168,16 @@ footer p{
 /* -------------------- main -------------------------*/
 
 /* education */
-.education{      
+#education{      
     display: inline-block;
 }
-.education::after{
+#education::after{
     content: '';
     display: block;
     clear: all
 }
 
-.education, .work{
+#education, #work{
     padding: 1.5rem 
 }
 .edu-card{
@@ -186,11 +191,15 @@ footer p{
 
 /* work */
 
-.work{
-    background: var(--base);
+#work{
+    background: var(--burgundy);
+    color: var(--accent)
+}
+#work h3{
+    color: var(--highlight)
 }
 
-.work::after{
+#work::after{
     content: '';
     display: block;
     clear: both;
@@ -203,7 +212,7 @@ footer p{
     display: inline-block;
     padding: 3rem;
     border-radius: 1rem;
-    border: .35rem solid var(--highlight);
+    border: .35rem solid var(--accent);
 }
 
 .job-disc, .job-title{
@@ -229,19 +238,108 @@ h4 + p{
 /* ------------------------nav------------------------- */
 
 nav {
-    font-size: 0;
-    background: var(--accent);    
+    overflow: hidden;
+    background: var(--accent);
+    top: 0;
+    text-transform: uppercase;
+    color: var(--burgundy)
 }
 
+.nav-btns{
+    display: flex;
+    float: right;
+}
 
-nav a{
+nav a{    
     display: inline-block;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
-    padding: 1rem;  
-    color: var(--highlight);
+    background-repeat: no-repeat;    
+    padding: 1rem;    
+    background-size:contain;      
+    color: var(--lowlight);
+    font-weight: 700;
 }
+
 
 nav a:hover{
     font-weight: 700;
+    background-color: var(--neutral);
+    color: var(--burgundy)
+}
+
+
+.btn-cont{
+    display: inline-block;    
+    padding: 1rem;
+}
+
+
+
+
+
+
+nav .btn-cont:hover{
+    background-color: var(--neutral);
+}
+
+nav .btn{
+    padding: .7rem;
+}
+
+nav .btn[title= "github"]{    
+    background-image: url("../images/socials-logs/github-mark-navy.svg");
+}
+nav .btn-cont:hover .btn[title= "github"]{
+    background-image: url("../images/socials-logs/github-mark-burgundy.svg");    
+    
+}
+
+nav .btn[title= "linkedin"]{    
+    background-image: url("../images/socials-logs/LinkedIn_icon-navy.svg");
+}
+nav .btn-cont:hover .btn[title= "linkedin"]{
+    background-image: url("../images/socials-logs/LinkedIn_icon-burgundy.svg");    
+    
+}
+
+
+
+/* ----------------------------------------------footer */
+
+
+footer a{    
+    display: inline-block;
+    font-size: 0;
+    text-align: center;
+    background-repeat: no-repeat;    
+    padding: 1rem;    
+    background-size:contain;
+}
+footer .btn{
+    padding: .7rem;}
+
+
+footer .btn[title= "github"]{    
+    background-image: url("../images/socials-logs/github-mark-yellow.svg");
+}
+footer .btn[title= "github"]:hover{
+    background-image: url("../images/socials-logs/github-mark-cream.svg");    
+    
+}
+
+footer .btn[title= "linkedin"]{    
+    background-image: url("../images/socials-logs/LinkedIn_icon-yellow.svg");
+}
+footer .btn[title= "linkedin"]:hover{
+    background-image: url("../images/socials-logs/LinkedIn_icon-cream.svg");    
+    
+}
+
+footer .btn[title= "email"]{    
+    background-image: url("../images/socials-logs/email-icon-yellow.svg");
+}
+footer .btn[title= "email"]:hover{
+    background-image: url("../images/socials-logs/email-icon-cream.svg");    
+    
 }
