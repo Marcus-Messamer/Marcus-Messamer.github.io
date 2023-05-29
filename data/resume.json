@@ -18,9 +18,9 @@
                 }                
             },
             "summary":[
-                {"res": "Created .... "},
-                {"res": "Lead .... "},
-                {"res": "Responsible for .... "}
+                "Created .... ",
+                "Lead .... ",
+                 "Responsible for .... "
             ]
             
         },
@@ -43,9 +43,9 @@
                 }                
             },
             "summary":[
-                {"res": "Created .... "},
-                {"res": "Lead .... "},
-                {"res": "Responsible for .... "}
+                "Created .... ",
+                "Lead .... ",
+                 "Responsible for .... "
             ]
             
         },
@@ -68,9 +68,9 @@
                 }                
             },
             "summary":[
-                {"res": "Created .... "},
-                {"res": "Lead .... "},
-                {"res": "Responsible for .... "}
+                "Created .... ",
+                "Lead .... ",
+                 "Responsible for .... "
             ]
             
         },
@@ -93,12 +93,42 @@
                 }                
             },
             "summary":[
-                {"res": "Created .... "},
-                {"res": "Lead .... "},
-                {"res": "Responsible for .... "}
+                "Created .... ",
+                "Lead .... ",
+                 "Responsible for .... "
             ]
             
         }
+    ]
+    ,
+    "education": [
+        {
+            "school": "Indian Hills Community College",
+            "deration":
+            {
+                "start": 2021,
+                "end": 2023
+            },
+            "major": "AAS Software Development - Web Design",
+            "summary": [
+                "summary",
+                "summary"
+            ]
+        },
+        {
+            "school": "Texas Christian University",
+            "deration":
+            {
+                "start": 2010,
+                "end": 2014
+            },
+            "major": "BS Mechanical Engineering",
+            "summary": [
+                "summary",
+                "summary"
+            ]
+        }
+
     ]
 
 

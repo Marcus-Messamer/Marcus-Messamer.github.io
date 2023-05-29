@@ -57,6 +57,9 @@ h4{
     font-weight: 700;
     margin: 0;
 }
+h5{
+    
+}
 p, li{
     font-size: .8rem;
     font-style: normal;
@@ -273,11 +276,18 @@ hr{
 
 
 
-a[href='#about'] i{
+a[href='marcus-messamer.github.io'] i{
     display: none;
 }
-a[href='#about']::after{
+a[href='marcus-messamer.github.io']::after{
     content: 'home';
+}
+
+a[href='#work'] i{
+    display: none;
+}
+a[href='#work']::after{
+    content: 'work experience';
 }
 
 a[href='#education'] i{
@@ -287,12 +297,7 @@ a[href='#education']::after{
     content: 'Education';
 }
 
-a[href='#work'] i{
-    display: none;
-}
-a[href='#work']::after{
-    content: 'work';
-}
+
 
 .nav-btns{
     display: flex;
@@ -351,7 +356,7 @@ footer i:hover{
         padding: 1.5rem;
     }
     .download{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -383,10 +388,10 @@ footer i:hover{
         
     
 
-    a[href='#about'] i{
+    a[href='marcus-messamer.github.io'] i{
         display:block;
     }
-    a[href='#about']::after{
+    a[href='marcus-messamer.github.io']::after{
         content: none;
     }
 
