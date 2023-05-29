@@ -80,7 +80,7 @@ header{
     color: var(--accent);
     margin-top: 3.5rem;
     position: relative;
-    height: 18.25rem;
+    min-height: 18.25rem;
 }
 #about{
     padding: 50px;
@@ -255,14 +255,35 @@ nav {
     background: var(--neutral);
     position: fixed;
     top: 0;
-    text-align: right;
+    text-align: center;
     width: 100%;
     z-index: 1;
     text-transform: uppercase;
     border-bottom: .5rem solid var(--accent);
-    padding-right: 1.5rem;
+    text-align: right;
+    padding-right: 1.2rem;
     
+}
 
+a[href='#about'] i{
+    display: none;
+}
+a[href='#about']::after{
+    content: 'home';
+}
+
+a[href='#education'] i{
+    display: none;
+}
+a[href='#education']::after{
+    content: 'Education';
+}
+
+a[href='#work'] i{
+    display: none;
+}
+a[href='#work']::after{
+    content: 'work';
 }
 
 .nav-btns{
@@ -314,3 +335,34 @@ footer i:hover{
     font-size: 1.4rem;
     color: var(--neutral)
 }
+
+
+@media screen and (max-width: 600px) {
+    nav{
+        text-align: center;
+        padding-right: 0;
+    }
+
+    a[href='#about'] i{
+        display:block;
+    }
+    a[href='#about']::after{
+        content: none;
+    }
+
+    a[href='#education'] i{
+        display:block;
+    }
+    a[href='#education']::after{
+        content: none;
+    }
+
+    a[href='#work'] i{
+        display:block;
+    }
+    a[href='#work']::after{
+        content: none;
+    }
+}
+
+
