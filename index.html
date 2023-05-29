@@ -1,69 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/81d203ed8d.js" crossorigin="anonymous"></script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcus Messamer</title>
-    <link rel="icon" type="image/x-icon" href="./images/initial.png">
+    <link rel="icon" type="image/x-icon" href="./images/x-icon.svg">
+
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css"> -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
 </head>
 <body>
     <div id="page">
 
         
+        <nav>
+            <a href="#about">Home</a>
+            <a href="#education">Education</a>
+            <a href="#work">Work</a>
 
+            <a class="btn" title="linkedin" href="https://www.linkedin.com/in/marcus-messamer-8171346a/"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="btn" title="github" href="https://github.com/Marcus-Messamer"><i class="fa-brands fa-github"></i></a>
+        </nav>
 
-        <header>
-            <nav>
-                <div class="nav-btns">
-                    <a href="#about">Home</a>
-                    <a href="#education">Education</a>
-                    <a href="#work">Work</a>
-                        <div class="btn-cont">
-                            <a class="btn" title="linkedin" href="https://www.linkedin.com/in/marcus-messamer-8171346a/"></a>
-                        </div>
-                        <div class="btn-cont">
-                            <a class="btn" title="github" href="https://github.com/Marcus-Messamer"></a>
-                        </div>
-                </div>                
-            </nav>
-            <div id="about">
+        <header id="about">
+            <img class="profile-pic"src="./images/profile-pic.jpg" alt="Marcus Messamer">
+
+            <div>
                 <h1>Marcus Messamer</h1>
                 <div class="title">
                     <h2>Software Engineer</h2>               
                     <p>*******elevator pitch*******</p>
                 </div>
             </div>
-
-
-
-            <div class="download-cont">
-                <a href="./data/Marcus Messamer Resume.docx" class="btn download" download=""></a>
-            </div>
-
-
-
+                <a href="./data/Marcus Messamer Resume.docx" class="btn download" download=""><i class="fa-solid fa-download"></i></a>
         </header>
 
 
         <main> 
-            <img class="profile-pic"src="./images/profile-pic.jpg" alt="Marcus Messamer">
 
-            <section id="education">
-
-                <h3>Education</h3>
-                <div class="edu-card">
-                    <h4>Indian Hills Community College | 2022 - 2023</h4>
-                    <p>AAS Software Development - Web Design</p>
-                    <p>Summary.</p>
-                </div>
-                <div class="edu-card">
-                    <h4>Texas Christian University | 2010 - 2014</h4>
-                    <p>BS Mechanical Engineering</p>
-                    <p>Summary.</p>
-                </div>
-            </section>
+            
 
             <section id="work">
                 <h3>Work Experience</h3>
@@ -175,21 +153,30 @@
                     <!-- end of Job Details block. -->
                 </div>
             </section>
+            <section id="education">
+                <div id="edu-cont">
+                    <h3>Education</h3>
+                    <div class="edu-card">
+                        <h4>Indian Hills Community College | 2022 - 2023</h4>
+                        <p>AAS Software Development - Web Design</p>
+                        <p>Summary.</p>
+                    </div>
+                    <div class="edu-card">
+                        <h4>Texas Christian University | 2010 - 2014</h4>
+                        <p>BS Mechanical Engineering</p>
+                        <p>Summary.</p>
+                    </div>
+                </div>
+            </section>
             
         </main>  
 
         <footer>
             
             <div class="contact">
-                <div class="btn-cont">
-                    <a class="btn" title="email" href="mailto:m.messamer@gmail.com"></a>
-                </div>
-                <div class="btn-cont">
-                    <a class="btn" title="linkedin" href="https://www.linkedin.com/in/marcus-messamer-8171346a/"></a>
-                </div>
-                <div class="btn-cont">
-                    <a class="btn" title="github" href="https://github.com/Marcus-Messamer"></a>
-                </div>
+                    <a class="btn" title="email" href="mailto:m.messamer@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a class="btn" title="linkedin" href="https://www.linkedin.com/in/marcus-messamer-8171346a/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="btn" title="github" href="https://github.com/Marcus-Messamer"><i class="fa-brands fa-github"></i></a>
             </div>
     
             <p>Copyright &copy; <script>document.write((new Date).getFullYear())</script> Marcus Messamer</p>
