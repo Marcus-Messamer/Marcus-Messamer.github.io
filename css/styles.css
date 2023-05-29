@@ -29,15 +29,19 @@ body{
 }
 #page{
     background-size: 16px;
+    max-width: 1200px;
+    margin: 0 auto;  
 }
 h1, h2{
     font-family: 'Prompt', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 0;    
 }
 h1{
     font-size: 4rem;
     color: var(--highlight);
+    line-height: 1;
+    margin-bottom: 2rem;
 }
 h2{
     font-size: 1.4rem;
@@ -80,10 +84,8 @@ header{
     color: var(--accent);
     margin-top: 3.5rem;
     position: relative;
-    min-height: 18.25rem;
-}
-#about{
-    padding: 50px;
+    min-height: 24rem;
+    padding: 3.125rem;
 }
 .title{
     padding-left: 2.6rem;
@@ -174,11 +176,7 @@ footer .btn[title= "email"]:hover{
     background: var(--accent);
     padding: .5rem;
     border: .35rem solid var(--highlight);
-}
-.profile-pic::after{
-    content: '';
-    display: block;
-    clear: all
+
 }
 
 /* education */
@@ -187,7 +185,8 @@ footer .btn[title= "email"]:hover{
     width: 100%;
     
     background: linear-gradient(rgba(245, 243, 234, .9), rgba(245, 243, 234, .3)), url(../images/IMG_4086_Original.JPG) no-repeat fixed;
-    background-size: cover;
+    background-position: center;
+        background-size: cover;
     
   }
   #edu-cont{
@@ -224,7 +223,7 @@ footer .btn[title= "email"]:hover{
     margin: 1rem;
     background: var(--neutral);
     display: inline-block;
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 1rem;
     border: .35rem solid var(--accent);
 }
@@ -237,7 +236,7 @@ h4 + p{
     font-style: italic;
 }
 .job-title{
-    width: 20rem;
+    min-width: 16rem;
     
 }
 
@@ -253,17 +252,26 @@ h4 + p{
 
 nav {
     background: var(--neutral);
-    position: fixed;
+    position: fixed;    
     top: 0;
-    text-align: center;
-    width: 100%;
-    z-index: 1;
     text-transform: uppercase;
-    border-bottom: .5rem solid var(--accent);
-    text-align: right;
-    padding-right: 1.2rem;
+    text-align: center;
+    z-index: 1;
+    width:100%;
+    
     
 }
+hr{
+    width: 100%;
+    color:#ff7d2d;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 3.4rem 0 0 0;
+    border: .25rem solid var(--accent);
+}
+
+
 
 a[href='#about'] i{
     display: none;
@@ -337,11 +345,43 @@ footer i:hover{
 }
 
 
-@media screen and (max-width: 600px) {
-    nav{
-        text-align: center;
-        padding-right: 0;
+@media screen and (max-width: 420px) {
+      
+    header{
+        padding: 1.5rem;
     }
+    .download{
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 540px) {
+    .title{
+        display: block;
+        padding: 0;
+    }
+    .title::before{
+        content: '';
+        display: block;
+        clear: both;
+        padding: 1rem 0;
+    }    
+    header{
+        text-align: center;
+    }    
+    .profile-pic{
+        float:none;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 658px) {
+    header{
+        min-height: 28rem;
+    }
+        
+    
 
     a[href='#about'] i{
         display:block;
@@ -365,4 +405,12 @@ footer i:hover{
     }
 }
 
-
+@media screen and (min-width: 1200px) {
+    nav{
+        left: 0px;
+    }
+    #education{
+        background-position: center;
+        background-size: contain;
+    }
+}
