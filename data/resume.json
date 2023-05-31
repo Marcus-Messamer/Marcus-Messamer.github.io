@@ -1,4 +1,16 @@
 {
+    "me":{
+        "firstName": "Marcus",
+        "lastName": "Messamer",
+        "phone": "(641) 295-1469",
+        "email": "m.messamer@gmail.com",
+        "address":{
+            "street": "1503 B Ave East",
+            "city": "Oskaloosa",
+            "state": "IA",
+            "zip": 52577
+        }
+    },
     "jobs": [
         {
             "title": "Embedded Software Engineer",
@@ -20,11 +32,10 @@
             "summary":[
                 "Created .... ",
                 "Lead .... ",
-                 "Responsible for .... "
+                "Responsible for .... "
             ]
             
         },
-
         {
             "title": "Design Engineer",
             "company": "Vermeer Corporation",
@@ -34,7 +45,7 @@
             },
             "deration": {
                 "start":{
-                    "month": 3,
+                    "month": 4,
                     "year": 2021
                 },
                 "end":{
@@ -43,13 +54,14 @@
                 }                
             },
             "summary":[
-                "Created .... ",
-                "Lead .... ",
-                 "Responsible for .... "
+                "Evaluate requests from production for changes",
+                "Work with the product design teams on changes",
+                "Contact vendors or switch suppliers to support production inventory",
+                "Assist in implementing changes on the floor",
+                "Make engineering change orders"
             ]
             
         },
-
         {
             "title": "Design Engineer",
             "company": "Midco International",
@@ -63,21 +75,21 @@
                     "year": 2019
                 },
                 "end":{
-                    "month": 3,
+                    "month": 4,
                     "year": 2022
                 }                
             },
             "summary":[
-                "Created .... ",
-                "Lead .... ",
-                 "Responsible for .... "
+                "Developed and initiated new product development for current and new applications",
+                "Carried out complete testing of new or revised products",
+                "Coordinated and initiated Research and Development activities",
+                "Coordinated the manufacturing launch of new/revised products"
             ]
             
         },
-
         {
-            "title": "Job Title",
-            "company": "Company",
+            "title": "Mechanical Designer",
+            "company": "American Rack Company",
             "location": {
                 "city":"Chicago",
                 "state": "IL"
@@ -85,19 +97,66 @@
             "deration": {
                 "start":{
                     "month": 1,
-                    "year": 2019
+                    "year": 2018
                 },
                 "end":{
-                    "month": 3,
-                    "year": 2022
+                    "month": 10,
+                    "year": 2018
+                }                
+            },
+            "summary":[
+                "Worked with shop to solve manufacturing problems",
+                "Supervised, distributed work, and provided training to junior designers",
+                "Developed and integrated standard processes for design team"
+            ]
+            
+        },
+        {
+            "title": "Project Manager/Designer",
+            "company": "Continental Fire Sprinkler Company",
+            "location": {
+                "city":"Davenport",
+                "state": "IA"
+            },
+            "deration": {
+                "start":{
+                    "month": 8,
+                    "year": 2016
+                },
+                "end":{
+                    "month": 4,
+                    "year": 2017
+                }                
+            },
+            "summary":[
+                "Designed fire sprinkler systems per NFPA standards",
+                "Coordinated with trades to ensure ease of installation",
+                "Managed fire sprinkler system installation"
+            ]
+            
+        },
+        {
+            "title": "Annuity Resolution Counselor",
+            "company": "Principal Financial Group",
+            "location": {
+                "city":"Des Moines",
+                "state": "IA"
+            },
+            "deration": {
+                "start":{
+                    "month": 7,
+                    "year": 2015
+                },
+                "end":{
+                    "month": 7,
+                    "year": 2016
                 }                
             },
             "summary":[
                 "Created .... ",
                 "Lead .... ",
-                 "Responsible for .... "
-            ]
-            
+                "Responsible for .... "
+            ]            
         }
     ]
     ,
@@ -128,8 +187,25 @@
                 "summary"
             ]
         }
+    ],
+    "skills":{
+        "frontend":[
+            "CSS",
+            "HTML5",
+            "UX",
+            "JavaScript",
+            ""
+        ],
+        "backend":[
+            "SQL",
+            "Oracle",
+            "MySQL",
+            "COBOL",
+            ""
 
-    ]
-
-
+        ],
+        "consepts":[
+            ""
+        ]
+    }
 }

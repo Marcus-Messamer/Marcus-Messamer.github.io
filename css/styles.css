@@ -50,20 +50,25 @@ h3{
     font-size: 1.5rem;
     margin-bottom: 1rem;
     margin-top: 0;
-    color:var(--burgundy);
 }
 h4{
     font-size: 1rem;
     font-weight: 700;
     margin: 0;
 }
-h5{
-    
+
+ul{
+    margin:0;
 }
+
 p, li{
     font-size: .8rem;
     font-style: normal;
-    margin: .3rem 0 .3rem 1rem;
+    margin: 0 0 0 1rem;
+
+}
+li{
+    padding: .1rem 0;
 }
 a{
     text-decoration: none;
@@ -184,9 +189,7 @@ footer .btn[title= "email"]:hover{
 
 /* education */
 #education {
-    display: inline-block;
-    width: 100%;
-    
+    width: 100%;    
     background: linear-gradient(rgba(245, 243, 234, .9), rgba(245, 243, 234, .3)), url(../images/IMG_4086_Original.JPG) no-repeat fixed;
     background-position: center;
         background-size: cover;
@@ -206,48 +209,50 @@ footer .btn[title= "email"]:hover{
     background: var(--lowlight);
     padding: 2rem;
     border-radius: 2rem;
-    margin: 2rem;
-    border: .25rem solid var(--accent)
+    margin: .5rem;
+    border: .25rem solid var(--accent);
+    display: inline-block;
+}
+
+#education ul{
+    list-style: none;
 }
 
 /* work */
 
 #work{
-    
     background: var(--burgundy);
-    color: var(--accent)
-}
-#work h3{
     color: var(--highlight)
 }
 
-.job-card{
-    color: var(--lowlight);
-    margin: 1rem;
-    background: var(--neutral);
-    display: inline-block;
-    padding: 2rem;
-    border-radius: 1rem;
-    border: .35rem solid var(--accent);
-}
 
-.job-disc, .job-title{
-    display: inline-block;
+h4 ~ p{
+    font-size: .675rem;
 }
 
 h4 + p{
     font-style: italic;
+    margin-top: .25rem;
+}
+.job-card{
+    color: var(--lowlight);
+    margin: 1rem;
+    background: var(--neutral);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: .35rem solid var(--accent);
 }
 .job-title{
-    min-width: 16rem;
-    
+    width: 30%;
+    display: inline-block;
+    padding-right: 2rem;
+
 }
 
 .job-disc{
-    text-align: left;
-    padding-left: 0rem;
-    padding-top: 1rem;
-    display: block;
+    width: 67.5%;
+    border-left: 1px solid var(--accent);
+    display: inline-block;
 }
 
 
@@ -379,13 +384,32 @@ footer i:hover{
         float:none;
         margin: 0;
     }
+    .job-title{
+        min-width: auto;
+    }
+    li{
+        padding: .3rem 0;
+    }
 }
 
-@media screen and (max-width: 658px) {
+@media screen and (max-width: 650px) {
     header{
         min-height: 28rem;
     }
-        
+
+    .job-disc{
+        margin-top: .5rem;
+        padding-top: .5rem;
+        border-top: 1px solid var(--accent);
+        border-left: unset;
+        width: 100%;        
+    }
+    .job-title{       
+        width: 100%;        
+    }
+    li{
+        padding: .2rem 0;
+    }    
     
 
     a[href='marcus-messamer.github.io'] i{
