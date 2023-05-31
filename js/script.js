@@ -86,7 +86,7 @@ function edCards(data){
 
 function buildRes(data){
 
-    work = `<h3>Work Experience</h3>`;
+    var work = `<h3>Work Experience</h3>`;
     work += jobCards(data);
 
     document.getElementById("work").innerHTML = work;
