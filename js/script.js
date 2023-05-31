@@ -92,7 +92,7 @@ function buildRes(data){
     document.getElementById("work").innerHTML = work;
 
 
-    education = `<div id="edu-cont">
+    var education = `<div id="edu-cont">
     <h3>Education</h3>`;
     education += edCards(data);
     document.getElementById("education").innerHTML = education;
