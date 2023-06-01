@@ -5,7 +5,7 @@
     --accent: #ff7d2d;
     --lowlight: #233c4b;
     --neutral: #f5f3ea;
-    --burgundy: #70161eff;
+    --burgundy: #70161e;
 }
 
 
@@ -14,6 +14,7 @@
 
 html{
     box-sizing: border-box;
+    background: var(--neutral);
 }
 *, *:before, *:after{
     box-sizing: inherit;
@@ -21,7 +22,9 @@ html{
 
 
 body{ 
-    background: var(--neutral);
+    background-image: url("../images/Background\ pattern.png");
+    background-size: 25rem;
+    background-position: center;
     color: var(--burgundy);   
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -62,7 +65,7 @@ ul{
 }
 
 p, li{
-    font-size: .8rem;
+    font-size: .75rem;
     font-style: normal;
     margin: 0 0 0 1rem;
 
@@ -215,7 +218,12 @@ footer .btn[title= "email"]:hover{
 }
 
 #education ul{
-    list-style: none;
+    list-style: circle;
+    border-top: 1px solid var(--accent);
+    margin-top: 1rem;
+    padding-top: .75rem;
+    padding-left: 0;
+    
 }
 
 /* work */

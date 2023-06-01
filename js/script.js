@@ -66,7 +66,6 @@ function edCards(data){
     <div class="edu-card">
         <h4>${ed.school} | ${ed.deration.start} - ${ed.deration.end}</h4>
         <p>${ed.major}</p>
-        <p>Summary.</p>
         <ul>
         `;
         for(var sum of ed.summary){
