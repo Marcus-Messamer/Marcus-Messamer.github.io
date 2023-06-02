@@ -22,7 +22,7 @@ html{
 
 
 body{ 
-    background-image: url("../images/Background\ pattern.png");
+    background-image: url("../images/70s\ base.svg");
     background-size: 25rem;
     background-position: center;
     color: var(--burgundy);   
@@ -445,9 +445,5 @@ footer i:hover{
 @media screen and (min-width: 1200px) {
     nav{
         left: 0px;
-    }
-    #education{
-        background-position: center;
-        background-size: contain;
     }
 }
