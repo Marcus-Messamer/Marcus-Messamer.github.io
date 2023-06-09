@@ -23,7 +23,7 @@ html{
 
 body{ 
     background-image: url("../images/70s\ base.svg");
-    background-size: 25rem;
+    background-size: 15rem;
     background-position: center;
     color: var(--burgundy);   
     margin: 0;
@@ -32,8 +32,9 @@ body{
 }
 #page{
     background-size: 16px;
-    max-width: 1200px;
+    width: 80%;
     margin: 0 auto;  
+    max-width: 1200px;
 }
 h1, h2{
     font-family: 'Prompt', sans-serif;
@@ -195,7 +196,7 @@ footer .btn[title= "email"]:hover{
     width: 100%;    
     background: linear-gradient(rgba(245, 243, 234, .9), rgba(245, 243, 234, .3)), url(../images/IMG_4086_Original.JPG) no-repeat fixed;
     background-position: center;
-        background-size: cover;
+    background-size: cover;
     
   }
   #edu-cont{
@@ -215,6 +216,7 @@ footer .btn[title= "email"]:hover{
     margin: .5rem;
     border: .25rem solid var(--accent);
     display: inline-block;
+    
 }
 
 #education ul{
@@ -270,10 +272,12 @@ nav {
     background: var(--neutral);
     position: fixed;    
     top: 0;
+    left: 0;
     text-transform: uppercase;
     text-align: center;
     z-index: 1;
     width:100%;
+    border-bottom: .3rem solid var(--accent);
     
     
 }
@@ -371,6 +375,7 @@ footer i:hover{
     .download{
         font-size: 1.2rem;
     }
+    
 }
 
 
@@ -398,9 +403,12 @@ footer i:hover{
     li{
         padding: .3rem 0;
     }
+    #page{
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 823px) {
     header{
         min-height: 28rem;
     }
@@ -439,11 +447,5 @@ footer i:hover{
     }
     a[href='#work']::after{
         content: none;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    nav{
-        left: 0px;
     }
 }
